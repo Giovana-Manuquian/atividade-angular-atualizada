@@ -1,0 +1,393 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 90px;
+    display: inline-block;
+    background-color: #0581B6;
+}
+
+.logo {
+    float: left;
+    padding: 25px;
+    width: 80vw;
+    padding-left: 120px;
+    padding-top: 17px;
+}
+
+.logo img {
+    width: 125px;
+}
+
+/* começo login*/
+.acesso {
+    margin-top: 25px;
+}
+
+.acesso a {
+    padding: 5px;
+
+    color: #ffffff;
+    background-color: #0c0b0b;
+    border-radius: 20px;
+
+    font-family: "Roboto";
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2;
+    font-weight: 100;
+    width: 50%;
+    height: 30px;
+}
+
+/* fim login */
+
+/* começo menu */
+.menu {
+    background-color: #ffffff;
+    width: 70vw;
+    margin: 0 auto;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    color: rgba(182, 174, 174, 0.925);
+    text-decoration: none;
+    /* tira a linha de marcação */
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* final menu */
+
+/* banner */
+.coluna-100 {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+/* começo botões banner */
+/* seta esquerda banner */
+button.slick-prev {
+    font-size: 0px;
+    border: none;
+    width: 21px;
+    height: 56px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    /* background-image: url('../img/seta-esquerda.png'); */
+    top: 60%;
+    left: 15%;
+}
+
+/* seta direita banner */
+button.slick-next {
+    font-size: 0px;
+    border: none;
+    width: 21px;
+    height: 56px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    /* background-image: url('../img/seta-direita.png'); */
+    top: 60%;
+    right: 15%;
+}
+
+.slick-initialized {
+    overflow: hidden;
+}
+
+.slick-dots li button {
+    font-size: 0px;
+    border: 3px solid #ffffff;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slick-dots {
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    left: 40%;
+    top: 570px;
+}
+
+li.slick-active button {
+    background: #0098c6;
+}
+
+.slick-dots li {
+    padding-left: 10px;
+    display: inline-block;
+}
+
+/* final botões banner */
+
+
+.container {
+    width: 1200px;
+    /* width: 90vw;
+    margin: 0 auto; */
+}
+
+/* começo dos cards */
+.ofertas {
+    background-color: rgb(255, 249, 249);
+    padding-top: 30px;
+}
+
+/* .departamentos {
+    background-color: rgb(255, 249, 249);
+    padding-top: 30px;
+} */
+
+.ofertas h2 {
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 27px;
+    margin-top: 20px;
+}
+
+/* .departamentos h2 {
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 30px;
+} */
+
+/* espaço cards */
+.espaco-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 80vw;
+}
+
+.cardnews {
+    width: 11em;
+    height: 18.5em;
+    background: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%);
+    color: #fff;
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0), 0px 0px 30px rgb(0, 0, 0);
+
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.cardnews {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.cardnews img {
+    width: 100%;
+}
+
+/* informações dos cards */
+.texto-card {
+    width: 85%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.texto-card h3,
+.texto-card p {
+    margin: 0;
+}
+
+.cardnews h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cardnews .preco {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+/* final cards */
+
+footer {
+    background-color: #0098c6;
+}
+
+.rodape {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+
+    color: black;
+}
+
+/* espaçamento dos blocos footer */
+.links-footer {
+    width: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 220px;
+}
+
+.links-footer h2 {
+    font-family: 'Titillium Web';
+    font-size: 21px;
+    margin: 0 30px;
+}
+
+.links-footer a {
+    font-family: 'Titillium Web';
+    font-size: 14px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.links-footer a:hover {
+    color: #0d6efd;
+}
+
+/* final configurações blocos footer */
+
+.redes {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes h2 {
+    font-family: 'Titillium Web';
+    font-size: 20px;
+    margin: 0 30px;
+}
+
+.redes img {
+    padding-top: 10px;
+    display: flex;
+    margin: 0 5px;
+}
+
+/*@media screen and (max-width: 1100px) {
+
+    .menu {
+        display: none;
+
+        position: absolute;
+        top: 80px;
+        right: 0px;
+
+        height: 400px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #1E1C21;
+        align-items: center;
+
+    }
+
+    .menu-ativo {
+        display: flex;
+    }
+
+    #barras {
+        display: inline-block;
+    }
+}*/
+
+/* @media screen and (max-width: 1200px) {
+    .logo {
+        width: 60vw;
+    }
+
+} */
+
+@media screen and (max-width:730px) {
+    .logo {
+        width: 60vw;
+    }
+
+    .container {
+        width: 730px;
+    }
+
+    .menu {
+        width: 20vw;
+        display: grid;
+    }
+
+    .ofertas h2 {
+        font-size: 20px;
+    }
+
+    .cardnews {
+        width: 5.5em;
+        height: 12.5em;
+    }
+
+    .texto-card {
+        font-size: 13px;
+    }
+
+    .cardnews .preco {
+        font-size: 13px;
+    }
+
+    .links-footer {
+        display: grid;
+        padding-left: 70px;
+    }
+
+    .redes img {
+        width: 33px;
+    }
+
+    button.slick-prev {
+        width: 8px;
+        top: 75%;
+    }
+}
+
+@media screen and (max-width: 330px) {
+
+    .container {
+        width: 330px;
+    }
+
+    .logo {
+        width: 65vw;
+        padding-left: 45px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .links-footer {
+        display: grid;
+    }
+
+    .redes img {
+        width: 26px;
+    }
+
+}

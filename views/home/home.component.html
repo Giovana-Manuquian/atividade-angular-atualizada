@@ -1,0 +1,155 @@
+<header class="cabecalho">
+    <div class="cabecalho">
+        <div class="logo">
+            <a href="index.html"><img src="/assets/img/logo.png" alt="logo" /></a>
+        </div>
+        <nav>
+            <div class="acesso">
+                <a routerLink="/login" target="_self">Iniciar sessão</a>
+                <!-- routerLink serve para chamar uma página -->
+            </div>
+        </nav>
+    </div>
+</header>
+<nav id="menu" class="menu">
+    <a href="#" target="_blank">Categorias</a>
+    <a href="#" target="_blank">Ofertas</a>
+    <a href="#" target="_blank">PC gamer</a>
+    <a href="#" target="_blank">Eletrônicos</a>
+    <a href="#" target="_blank">Contato</a>
+    <!--<div class="busca">
+        <input placeholder="Pesquise aqui" type="text" />
+    </div>-->
+    <!-- <a href="#" id="barras"><img class="icone-menu" src="/assets/img/bars.svg" alt="Ícone do menu de barras"></a>  -->
+</nav>
+<main>
+    <section>
+        <div class="coluna-100">
+            <!-- <div class="banner">
+                <img src="/assets/img/Banner 1.jpg" />
+                <img src="/assets/img/Banner 2.jpg" />
+                <img src="/assets/img/Banner 3.jpg" />
+                <img src="/assets/img/Banner 4.jpg" />
+                <img src="/assets/img/Banner 5.jpg" />
+            </div> -->
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+                (init)="slickInit($event)" (breakpoint)="breakpoint($event)">
+                <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                    <img src="{{ slide.img }}" alt="" width="100%">
+                </div>
+            </ngx-slick-carousel>
+        </div>
+    </section>
+    <section class="ofertas">
+        <div class="container">
+            <h3>Ofertas do dia</h3>
+            <div class="espaco-produtos">
+                <div class="cardnews">
+                    <img src="/assets/img/controle.jpg" alt="cardnews">
+                    <div class="texto-card">
+                        <p>Controle sem fio</p>
+                        <p>Dualshock - PS4</p>
+                        <p class="preco">R$299,99</p>
+                    </div>
+                </div>
+                <div class="cardnews">
+                    <img src="/assets/img/head.jpg" alt="cardnews">
+                    <div class="texto-card">
+                        <p>Headphone</p>
+                        <p>Bluetooth - Preto</p>
+                        <p class="preco">R$349,99</p>
+                    </div>
+                </div>
+                <div class="cardnews">
+                    <img src="/assets/img/drone.jpg" alt="cardnews">
+                    <div class="texto-card">
+                        <p>Mini drone - Branco</p>
+                        <p class="preco">R$3.000,00</p>
+                    </div>
+                </div>
+                <div class="cardnews">
+                    <img src="/assets/img/cel.jpg" alt="cardnews">
+                    <div class="texto-card">
+                        <p>Apple Iphone - Cinza</p>
+                        <p class="preco">R$3.199,99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h3>Departamentos</h3>
+                <div class="espaco-produtos">
+                    <div class="cardnews">
+                        <img src="/assets/img/pc.jpg" alt="cardnews">
+                        <div class="texto-card">
+                            <p>Computadores</p>
+                        </div>
+                    </div>
+                    <div class="cardnews">
+                        <img src="/assets/img/xbox.jpg" alt="cardnews">
+                        <div class="texto-card">
+                            <p>Games</p>
+                        </div>
+                    </div>
+                    <div class="cardnews">
+                        <img src="/assets/img/mouse.jpg" alt="cardnews">
+                        <div class="texto-card">
+                            <p>Periféricos</p>
+                        </div>
+                    </div>
+                    <div class="cardnews">
+                        <img src="/assets/img/hard.jpg" alt="cardnews">
+                        <div class="texto-card">
+                            <p>Hardware</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container-rodape">
+        <div class="links-footer">
+            <div>
+                <h2>Departamentos</h2>
+                <ul>
+                    <li><a href="#">Computadores</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Periféricos</a></li>
+                    <li><a href="#">Hardware</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Ofertas</h2>
+                <ul>
+                    <li><a href="#">Apple Iphone</a></li>
+                    <li><a href="#">Controle PS4</a></li>
+                    <li><a href="#">Drone</a></li>
+                    <li><a href="#">Headphone</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Atendimento</h2>
+                <ul>
+                    <li><a href="#">Cel: (00) 0000-0000</a></li>
+                </ul>
+            </div>
+            <div class="redes">
+                <h2>Redes Sociais</h2>
+                <a href="#"><img src="/assets/img/face1.png" alt="Logo do Facebook"></a>
+                <a href="#"><img src="/assets/img/insta1.png" alt="Logo do Instagram"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/src/assets/js/jquery.js"></script>
+<script type="text/javascript" src="/src/assets/js/script.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- <script type="text/javascript" src="./js/script.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
